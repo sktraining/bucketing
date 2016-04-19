@@ -24,7 +24,9 @@ Assumptions:
   1. Start_date is rounded down to the beginning of the hour.
 
 #### Examples
+````ruby
 ('2016-04-18_01:35', '2016-04-18_03:42') --> ['2016-04-18_01', '2016-04-18_02']
+```
 
 
 ---
@@ -36,8 +38,9 @@ Assumptions are the same as stated above, plus:
   1. Start_date is always rounded down to the beginning of the day (e.g. - '2016-04-18_15:35' --> '2016-04-18_00:00').
 
 #### Examples
+````ruby
 ('2016-04-18_15:35', '2016-04-20_17:42') --> ['2016-04-18', '2016-04-19']
-
+````
 ---
 
 ### Phase 3 Objective
@@ -45,8 +48,9 @@ Given a date range range (start_date, end_date), return an array of  the minimum
 Assumptions are the same as stated above.
 
 #### Examples
+````ruby
 ('2016-04-18_15:35', '2016-04-20_02:42') --> ['2016-04-18', '2016-04-19', '2016-04-20_00', '2016-04-20_01']
-
+````
 ---
 
 ### Phase 4 Objective
@@ -57,4 +61,6 @@ Assumptions are the same as stated above with one exception:
   1. Start_date is again rounded down to the beginning of the hour.
 
 #### Examples
+````ruby
 ('2016-04-17_22:35', '2016-04-20_02:42') --> ['2016-04-17_22', '2016-04-17_23', '2016-04-18', '2016-04-19', '2016-04-20_00', '2016-04-20_01']
+````
